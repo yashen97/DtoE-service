@@ -20,7 +20,7 @@ public class Employee {
     private Date date;
 
     @ManyToOne
-    @JoinColumn(name = "DEPT_ID",referencedColumnName = "id")     //TODO:refer and continue
+    @JoinColumn(name = "DEPT_ID",referencedColumnName = "id")
     private Department departmentId;
 
 }

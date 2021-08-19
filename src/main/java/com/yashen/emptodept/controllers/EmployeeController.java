@@ -33,6 +33,11 @@ public class EmployeeController {
         return employeeService.findOne(id);
     }
 
+    @GetMapping("/getall")
+    public @ResponseBody List<Employee> getAllEmployee(){
+        return employeeService.getAll();
+    }
+
     @PutMapping("update/{id}")
     public String updateEmployee(@RequestBody Employee employee){
         employeeService.addOrUpdate(employee);

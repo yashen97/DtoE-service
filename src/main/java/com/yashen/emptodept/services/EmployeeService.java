@@ -19,7 +19,7 @@ public class EmployeeService {
 
     public List<Employee> addAll(List<Employee> employeeList){return empRepo.saveAll(employeeList);} //POST
 
-    public List<Employee> getAll(List<Employee> employeeList){                                      //GET
+    public List<Employee> getAll(){                                      //GET
         return empRepo.findAll();
     }
 

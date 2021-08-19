@@ -13,6 +13,6 @@ public class Department {
     private Long id;
     @Column(name = "NAME",nullable = false)
     private String name;
-    @Column(name = "DEPT_CODE",nullable = false)
+    @Column(name = "DEPARTMENT_CODE",nullable = false)
     private String code;
 }
